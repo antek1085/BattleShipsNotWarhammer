@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 367424052635549475}
   - component: {fileID: 7236265431465169915}
   - component: {fileID: 4750401051240026159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,3 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3d7922519b76e4588d2bb3171357a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newMaterial: {fileID: 2100000, guid: c6eaab257bb97cb43a48e2a06dc7e965, type: 2}
+  isRaycasted: 0
