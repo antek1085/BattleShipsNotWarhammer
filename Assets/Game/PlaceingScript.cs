@@ -7,10 +7,17 @@ public class PlaceingScript : MonoBehaviour
 {
    [SerializeField] GameObject rayCastLeft, rayCastMiddle, rayCastRight;
    [SerializeField] LayerMask layerMask;
-   bool isHeld;
+   bool isRayCastLeft, isRayCastMiddle, isRayCastRight;
+   GameObject middleTile;
+   public bool isHeld;
+   [SerializeField] Vector3 startingPosition;
 
    void Awake()
    {
+      isRayCastRight = false;
+      isRayCastLeft = false;
+      isRayCastMiddle = false;
+      startingPosition = transform.position;
       isHeld = true;
    }
    void Update()
@@ -29,6 +36,25 @@ public class PlaceingScript : MonoBehaviour
          {
             RayCastRight();
          }
+
+         if (Input.GetKeyUp(KeyCode.R))
+         {
+            transform.rotation *= Quaternion.Euler(0,90,0);
+            Debug.Log("1");
+            
+         }
+      }
+
+      if (isHeld == false)
+      {
+         if (isRayCastLeft == true && isRayCastMiddle == true && isRayCastRight == true && middleTile != null)
+         {
+            transform.position = new Vector3(middleTile.transform.position.x, 15f, middleTile.transform.position.z);
+         }
+         else
+         {
+            transform.position = startingPosition;
+         }
       }
    }
 
@@ -40,6 +66,11 @@ public class PlaceingScript : MonoBehaviour
       if (Physics.Raycast(rayCastLeft.transform.position, rayCastLeft.transform.up * -1, out hit, Mathf.Infinity, layerMask))
       {
          hit.transform.GetComponent<Tile>().isRaycasted = true;
+         isRayCastLeft = true;
+      }
+      else
+      {
+         isRayCastLeft = false;
       }
    }
 
@@ -49,6 +80,13 @@ public class PlaceingScript : MonoBehaviour
       if (Physics.Raycast(rayCastMiddle.transform.position, rayCastMiddle.transform.up * -1, out hit, Mathf.Infinity, layerMask))
       {
          hit.transform.GetComponent<Tile>().isRaycasted = true;
+         middleTile = hit.transform.gameObject;
+         isRayCastMiddle = true;
+      }
+      else
+      {
+         middleTile = null;
+         isRayCastMiddle = false;
       }
    }
    void RayCastRight()
@@ -57,6 +95,11 @@ public class PlaceingScript : MonoBehaviour
       if (Physics.Raycast(rayCastRight.transform.position, rayCastMiddle.transform.up * -1, out hit, Mathf.Infinity, layerMask))
       {
          hit.transform.GetComponent<Tile>().isRaycasted = true;
+         isRayCastRight = true;
+      }
+      else
+      {
+         isRayCastRight = false;
       }
    }
    

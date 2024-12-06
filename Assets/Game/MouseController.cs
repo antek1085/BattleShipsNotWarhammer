@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,36 +7,74 @@ public class MouseController : MonoBehaviour
 {
     Vector3 mousePosition;
     [SerializeField] LayerMask layerMask;
+    int click;
 
     GameObject ship;
-    public Plane plane;
+    Vector3 shipPosition;
+    Plane plane;
     Ray ray;
+
+
+    void Awake()
+    {
+        plane = new Plane(Vector3.up, this.transform.position);
+        
+    }
     void Update()
     {
         mousePosition = Input.mousePosition;
-        ray = Camera.main.ScreenPointToRay(mousePosition);
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         { 
             Ray ray = Camera.main.ScreenPointToRay(mousePosition);
             RaycastHit hit;
-            
-            if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
+            Debug.Log(click);
+
+            switch (click)
             {
-                ship = hit.transform.gameObject;
-                Debug.Log(ship);
+                case 0:
+                    if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
+                    {
+                        ship = hit.transform.gameObject; 
+                        ship.GetComponent<PlaceingScript>().isHeld = true;
+                        click = 1;
+                    }
+                    break;
+                case 1:
+                    if (ship != null && click == 1) 
+                    {
+                        ship.GetComponent<PlaceingScript>().isHeld = false;
+                        ship = null;
+                        click = 0;
+                    }
+                    break;
             }
+            
+            /*if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
+            {
+                ship = hit.transform.gameObject; 
+                ship.GetComponent<PlaceingScript>().isHeld = true;
+            }
+            else
+            {
+                if (ship != null)
+                {
+                    ship.GetComponent<PlaceingScript>().isHeld = false;
+                    ship = null;
+                }
+            }*/
         }
 
         if (ship != null)
         {
+            ray = Camera.main.ScreenPointToRay(mousePosition);
+
             if (plane.Raycast(ray, out float distance))
             {
-                ship.transform.position = ray.GetPoint(distance);
-
-                var transformPosition = ship.transform.position;
-                transformPosition.y = 16.5f;
-            }   
+                Vector3 targetPostion = ray.GetPoint(distance);
+                ship.transform.position = new Vector3(targetPostion.x, 16.5f, targetPostion.z);
+            }
+            
         }
     }
 }
