@@ -16,9 +16,12 @@ public class Tile : MonoBehaviour
    void Awake()
    {
       index = transform.GetSiblingIndex();
-      ShootMissleEvent.current.onMissleShoot += OnMissleShoot;
       isRaycasted = false;
       actualMaterial = GetComponent<MeshRenderer>().material;
+   }
+   void Start()
+   {
+      ShootMissleEvent.current.onMissleShoot += OnMissleShoot;
    }
 
    void Update()
