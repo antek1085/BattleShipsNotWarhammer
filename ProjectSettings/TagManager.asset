@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Placable Tile
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - Placable Tile
   - Ship
-  - 
-  - 
+  - Missle
+  - Hittable Tile
   - 
   - 
   - 

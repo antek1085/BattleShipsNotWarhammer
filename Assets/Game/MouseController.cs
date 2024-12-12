@@ -28,7 +28,6 @@ public class MouseController : MonoBehaviour
         { 
             Ray ray = Camera.main.ScreenPointToRay(mousePosition);
             RaycastHit hit;
-            Debug.Log(click);
 
             switch (click)
             {
