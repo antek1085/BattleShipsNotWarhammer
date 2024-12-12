@@ -1,17 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Fusion;
 using UnityEngine;
 
-public class TargetableTile : MonoBehaviour
+public class TargetableTile : NetworkBehaviour
 {
     int index;
+    GameMode mode;
     void Awake()
     {
         index = transform.GetSiblingIndex();
     }
     public void ShootMissle()
     {
-        ShootMissleEvent.current.MissleShoot(index);
+        mode = GameMode.AutoHostOrClient;
+        ShootMissleEvent.current.MissleShoot(index,mode);
     }
 }

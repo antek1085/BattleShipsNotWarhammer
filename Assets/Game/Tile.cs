@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Tile : MonoBehaviour
@@ -10,6 +11,7 @@ public class Tile : MonoBehaviour
    [SerializeField] GameObject missle;
    public bool isRaycasted; 
    int index;
+   [SerializeField] private LayerMask layerMask;
    
    
 
@@ -18,10 +20,6 @@ public class Tile : MonoBehaviour
       index = transform.GetSiblingIndex();
       isRaycasted = false;
       actualMaterial = GetComponent<MeshRenderer>().material;
-   }
-   void Start()
-   {
-      ShootMissleEvent.current.onMissleShoot += OnMissleShoot;
    }
 
    void Update()
@@ -39,18 +37,19 @@ public class Tile : MonoBehaviour
       isRaycasted = false;
    }
 
-   void OnMissleShoot(int indexEvent)
+   public void OnMissleShoot()
    {
-      if (indexEvent == index)
-      {
          Debug.Log("Spada");
          Instantiate(missle, new Vector3(this.transform.position.x, transform.position.y + 10f, transform.position.z), Quaternion.Euler(0, 0, 0));
-      }
    }
 
    public void TileHit()
    {
-      Debug.Log(index + " Tile");
+      RaycastHit hit;
+      if (Physics.Raycast(this.transform.position, transform.transform.up, out hit, Mathf.Infinity, layerMask))
+      {
+         hit.transform.GetComponent<PlaceingScript>().HP -= 1;
+      }
    }
 
 }

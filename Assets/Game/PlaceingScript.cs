@@ -11,6 +11,7 @@ public class PlaceingScript : MonoBehaviour
    GameObject middleTile;
    public bool isHeld;
    [SerializeField] Vector3 startingPosition;
+   public int HP;
 
    void Awake()
    {
@@ -55,6 +56,11 @@ public class PlaceingScript : MonoBehaviour
          {
             transform.position = startingPosition;
          }
+      }
+
+      if (HP == 0)
+      {
+         Debug.Log("Destroy");
       }
    }
 
