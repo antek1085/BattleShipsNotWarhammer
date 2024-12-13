@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using Fusion.Sockets;
 using Fusion;
 
-public class BasicSpawner : NetworkBehaviour, INetworkRunnerCallbacks
+public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 {
   private NetworkRunner _runner;
   
@@ -13,6 +13,7 @@ public class BasicSpawner : NetworkBehaviour, INetworkRunnerCallbacks
   {
     // Create the Fusion runner and let it know that we will be providing user input
     _runner = gameObject.AddComponent<NetworkRunner>();
+    _runner = GetComponent<NetworkRunner>();
     _runner.ProvideInput = true;
 
     // Create the NetworkSceneInfo from the current scene
@@ -74,34 +75,23 @@ public class BasicSpawner : NetworkBehaviour, INetworkRunnerCallbacks
   }
   
   bool _mouseButton0;
-  bool _keyboardButtonR;
+  bool _keyboardButton_R;
 
   private void Update()
   {
     _mouseButton0 = _mouseButton0 | Input.GetMouseButton(0);
-    _keyboardButtonR = _keyboardButtonR | Input.GetKeyDown(KeyCode.R);
+    _keyboardButton_R = _keyboardButton_R | Input.GetKeyDown(KeyCode.R);
   }
 
   public void OnInput(NetworkRunner runner, NetworkInput input)
   {
     var data = new NetworkInputData();
-
-    if (Input.GetKey(KeyCode.W))
-      data.direction += Vector3.forward;
-
-    if (Input.GetKey(KeyCode.S))
-      data.direction += Vector3.back;
-
-    if (Input.GetKey(KeyCode.A))
-      data.direction += Vector3.left;
-
-    if (Input.GetKey(KeyCode.D))
-      data.direction += Vector3.right;
     
     data.buttons.Set(NetworkInputData.MOUSEBUTTON, _mouseButton0);
     _mouseButton0 = false;
-    data.buttons.Set(NetworkInputData.KEYBOARDR, _keyboardButtonR);
-    _keyboardButtonR = false;
+    
+    data.buttons.Set(NetworkInputData.KEYBOARD_R, _keyboardButton_R);
+    _keyboardButton_R = false;
 
     input.Set(data);
   }

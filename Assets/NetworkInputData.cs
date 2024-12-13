@@ -7,7 +7,7 @@ using Fusion;
 public struct NetworkInputData : INetworkInput
 {
     public const byte MOUSEBUTTON = 1;
-    public const byte KEYBOARDR = 1;
+    public const byte KEYBOARD_R = 2;
     
     public Vector3 direction;
     public NetworkButtons buttons;

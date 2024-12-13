@@ -14,7 +14,9 @@ public class TargetableTile : NetworkBehaviour
     }
     public void ShootMissle()
     {
+        Debug.Log("Spawn Missle");
         mode = GameMode.AutoHostOrClient;
+        Debug.Log(mode);
         ShootMissleEvent.current.MissleShoot(index,mode);
     }
 }

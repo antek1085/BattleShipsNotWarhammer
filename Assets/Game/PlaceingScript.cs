@@ -41,7 +41,7 @@ public class PlaceingScript : NetworkBehaviour
 
          if (GetInput(out NetworkInputData data))
          {
-            if (data.buttons.IsSet(NetworkInputData.KEYBOARDR))
+            if (data.buttons.IsSet(NetworkInputData.KEYBOARD_R))
             {
                transform.rotation *= Quaternion.Euler(0, 90, 0);
                Debug.Log("1");
