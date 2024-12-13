@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Fusion;
 using UnityEngine;
 
-public class PlaceingScript : MonoBehaviour
+public class PlaceingScript : NetworkBehaviour
 {
    [SerializeField] GameObject rayCastLeft, rayCastMiddle, rayCastRight;
    [SerializeField] LayerMask layerMask;
@@ -21,7 +22,7 @@ public class PlaceingScript : MonoBehaviour
       startingPosition = transform.position;
       isHeld = true;
    }
-   void Update()
+   public override void FixedUpdateNetwork()
    {
       if (isHeld)
       {
@@ -38,11 +39,13 @@ public class PlaceingScript : MonoBehaviour
             RayCastRight();
          }
 
-         if (Input.GetKeyUp(KeyCode.R))
+         if (GetInput(out NetworkInputData data))
          {
-            transform.rotation *= Quaternion.Euler(0,90,0);
-            Debug.Log("1");
-            
+            if (data.buttons.IsSet(NetworkInputData.KEYBOARDR))
+            {
+               transform.rotation *= Quaternion.Euler(0, 90, 0);
+               Debug.Log("1");
+            }
          }
       }
 

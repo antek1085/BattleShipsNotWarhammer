@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using Fusion.Sockets;
 using Fusion;
 
-public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
+public class BasicSpawner : NetworkBehaviour, INetworkRunnerCallbacks
 {
   private NetworkRunner _runner;
   
@@ -72,12 +72,14 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
       _spawnedCharacters.Remove(player);
     }
   }
-
-  private bool _mouseButton0;
+  
+  bool _mouseButton0;
+  bool _keyboardButtonR;
 
   private void Update()
   {
     _mouseButton0 = _mouseButton0 | Input.GetMouseButton(0);
+    _keyboardButtonR = _keyboardButtonR | Input.GetKeyDown(KeyCode.R);
   }
 
   public void OnInput(NetworkRunner runner, NetworkInput input)
@@ -98,6 +100,8 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     
     data.buttons.Set(NetworkInputData.MOUSEBUTTON, _mouseButton0);
     _mouseButton0 = false;
+    data.buttons.Set(NetworkInputData.KEYBOARDR, _keyboardButtonR);
+    _keyboardButtonR = false;
 
     input.Set(data);
   }
