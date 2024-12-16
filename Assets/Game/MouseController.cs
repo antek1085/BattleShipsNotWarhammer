@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Fusion;
+using Unity.Netcode;
 using UnityEngine;
 
 public class MouseController : NetworkBehaviour
 {
     Vector3 mousePosition;
     [SerializeField] LayerMask layerMask;
+    [SerializeField] Camera _camera;
     int click;
 
     GameObject ship;
@@ -16,67 +17,63 @@ public class MouseController : NetworkBehaviour
     Ray ray;
 
 
+
     void Awake()
+    {
+        GameEndEvent.current.onGameStart += OnGameStart;
+    }
+
+    void Start()
     {
         plane = new Plane(Vector3.up, this.transform.position);
         
     }
-    public override void FixedUpdateNetwork()
+    void OnGameStart()
     {
+        this.enabled = false;
+    }
+    public void Update()
+    {
+        if (!IsOwner)return;
+
         mousePosition = Input.mousePosition;
 
-        if (GetInput(out NetworkInputData data))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            if (data.buttons.IsSet(NetworkInputData.MOUSEBUTTON))
-            {
-                Ray ray = Camera.main.ScreenPointToRay(mousePosition);
-                RaycastHit hit;
+            Ray ray = _camera.ScreenPointToRay(mousePosition);
+            RaycastHit hit;
 
-                switch (click)
-                {
-                    case 0:
-                        if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
-                        {
-                            ship = hit.transform.gameObject; 
-                            ship.GetComponent<PlaceingScript>().isHeld = true;
-                            click = 1;
-                        }
-                        break;
-                    case 1:
-                        if (ship != null && click == 1) 
-                        {
-                            ship.GetComponent<PlaceingScript>().isHeld = false;
-                            ship = null;
-                            click = 0;
-                        }
-                        break;
-                }    
-            }
-            
-            
-            /*if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
+            switch (click)
             {
-                ship = hit.transform.gameObject; 
-                ship.GetComponent<PlaceingScript>().isHeld = true;
+                case 0: 
+                    if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
+                    {
+                        ship = hit.transform.gameObject; 
+                        
+                        ship.GetComponent<PlaceingScript>().isHeld = true;
+                        click = 1;
+                    }
+                    break;
+                case 1:
+                    if (ship != null && click == 1) 
+                    {
+                        
+                        ship.GetComponent<PlaceingScript>().isHeld = false;
+                        ship = null;
+                        click = 0;
+                    }
+                    break;
             }
-            else
-            {
-                if (ship != null)
-                {
-                    ship.GetComponent<PlaceingScript>().isHeld = false;
-                    ship = null;
-                }
-            }*/
         }
 
         if (ship != null)
         {
-            ray = Camera.main.ScreenPointToRay(mousePosition);
+            ray = _camera.ScreenPointToRay(mousePosition);
 
             if (plane.Raycast(ray, out float distance))
             {
                 Vector3 targetPostion = ray.GetPoint(distance);
-                ship.transform.position = new Vector3(targetPostion.x, 16.5f, targetPostion.z);
+                ship.transform.position = new Vector3(targetPostion.x, 3f, targetPostion.z);
             }
             
         }

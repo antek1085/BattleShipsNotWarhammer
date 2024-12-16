@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Fusion;
+using Unity.Netcode;
 using UnityEngine;
 
 public class PlaceingScript : NetworkBehaviour
@@ -12,18 +12,29 @@ public class PlaceingScript : NetworkBehaviour
    GameObject middleTile;
    public bool isHeld;
    [SerializeField] Vector3 startingPosition;
-   public int HP;
 
    void Awake()
    {
       isRayCastRight = false;
       isRayCastLeft = false;
       isRayCastMiddle = false;
-      startingPosition = transform.position;
       isHeld = true;
+      
+      GameEndEvent.current.onGameStart += OnGameStart;
    }
-   public override void FixedUpdateNetwork()
+   void OnGameStart()
    {
+      this.enabled = false;
+   }
+   void Start()
+   {
+      startingPosition = transform.position;
+   }
+   public void Update()
+   {
+
+      if(!IsOwner) return;
+      
       if (isHeld)
       {
          if (rayCastLeft != null)
@@ -38,32 +49,23 @@ public class PlaceingScript : NetworkBehaviour
          {
             RayCastRight();
          }
-
-         if (GetInput(out NetworkInputData data))
-         {
-            if (data.buttons.IsSet(NetworkInputData.KEYBOARD_R))
+         
+            if (Input.GetKeyDown(KeyCode.R))
             {
                transform.rotation *= Quaternion.Euler(0, 90, 0);
-               Debug.Log("1");
             }
-         }
       }
 
       if (isHeld == false)
       {
          if (isRayCastLeft == true && isRayCastMiddle == true && isRayCastRight == true && middleTile != null)
          {
-            transform.position = new Vector3(middleTile.transform.position.x, 15f, middleTile.transform.position.z);
+            transform.position = new Vector3(middleTile.transform.position.x, 2f, middleTile.transform.position.z);
          }
          else
          {
             transform.position = startingPosition;
          }
-      }
-
-      if (HP == 0)
-      {
-         Debug.Log("Destroy");
       }
    }
 
