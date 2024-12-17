@@ -20,17 +20,11 @@ public class PlaceingScript_4hp : NetworkBehaviour
       isRayCastMiddle = false;
       isRayCastRightUp = false;
       isHeld = false;
-      isPlaced = false;
-      
+
       GameEndEvent.current.onGameStart += OnGameStart;
    }
    void OnGameStart()
    {
-      if (isPlaced == false)
-      {
-         GameEndEvent.current.onGameStart -= OnGameStart;
-         Destroy(gameObject);
-      }
       this.enabled = false;
    }
    void Start()
@@ -72,12 +66,10 @@ public class PlaceingScript_4hp : NetworkBehaviour
          if (isRayCastLeft == true && isRayCastMiddle == true && isRayCastRight == true && LeftUpTile != null)
          {
             transform.position = new Vector3((LeftUpTile.transform.position.x + RightDownTile.transform.position.x) * (float)0.5, 2f, (LeftUpTile.transform.position.z + RightDownTile.transform.position.z) * (float)0.5 );
-            isPlaced = true;
          }
          else
          {
             transform.position = startingPosition;
-            isPlaced = false;
          }
       }
    }
