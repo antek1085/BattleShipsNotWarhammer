@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TargetableTile : NetworkBehaviour
 {
@@ -12,7 +13,8 @@ public class TargetableTile : NetworkBehaviour
     
     
     public bool isRaycasted;
-    [SerializeField] Material newMaterial;
+    [FormerlySerializedAs("newMaterial")]
+    [SerializeField] Material highLightedMaterial,baseMaterial;
     Material actualMaterial;
     
     
@@ -56,14 +58,14 @@ public class TargetableTile : NetworkBehaviour
     {
         if (isActive)
         {
-            if (isRaycasted == true && actualMaterial != newMaterial)
+            if (isRaycasted == true && actualMaterial != highLightedMaterial)
             {
-                actualMaterial = newMaterial;
+                actualMaterial = highLightedMaterial;
                 GetComponent<MeshRenderer>().material = actualMaterial;
             }
-            else if (isRaycasted == false && actualMaterial != null)
+            else if (isRaycasted == false && actualMaterial != baseMaterial)
             {
-                actualMaterial = null;
+                actualMaterial = baseMaterial;
                 GetComponent<MeshRenderer>().material = actualMaterial;
             }
             isRaycasted = false; 

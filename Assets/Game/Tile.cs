@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Tile : NetworkBehaviour
 {
-   [SerializeField] Material newMaterial;
+   [FormerlySerializedAs("newMaterial")]
+   [SerializeField] Material highlightedMaterial,baseMaterial;
    Material actualMaterial;
    [SerializeField] GameObject missle;
    public bool isRaycasted; 
@@ -29,14 +31,14 @@ public class Tile : NetworkBehaviour
 
    void Update()
    {
-      if (isRaycasted == true && actualMaterial != newMaterial)
+      if (isRaycasted == true && actualMaterial != highlightedMaterial)
       {
-         actualMaterial = newMaterial;
+         actualMaterial = highlightedMaterial;
          GetComponent<MeshRenderer>().material = actualMaterial;
       }
-      else if (isRaycasted == false && actualMaterial != null)
+      else if (isRaycasted == false && actualMaterial != baseMaterial)
       {
-         actualMaterial = null;
+         actualMaterial = baseMaterial;
          GetComponent<MeshRenderer>().material = actualMaterial;
       }
       isRaycasted = false;
