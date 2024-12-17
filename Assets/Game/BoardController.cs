@@ -53,9 +53,9 @@ public class BoardController : NetworkBehaviour
     
     //Send Info to Tile on Shoot to shoot Missle
 
-    void SendInformationToTile(int index)
+    void SendInformationToTile(int index,int clientID)
     {
-        childList[index].GetComponent<Tile>().OnMissleShoot();
+        childList[index].GetComponent<Tile>().OnMissleShoot(clientID);
     }
 
     void OnMissleShoot(int index,int clientID)
@@ -70,10 +70,10 @@ public class BoardController : NetworkBehaviour
         switch (clientID)
         {
             case 0:
-                TestClientRpc(index,new ClientRpcParams{ Send = {TargetClientIds = new List<ulong>{1} }} );
+                TestClientRpc(index,clientID,new ClientRpcParams{ Send = {TargetClientIds = new List<ulong>{1} }} );
                 break;
             case 1:
-                TestClientRpc(index,new ClientRpcParams{ Send = {TargetClientIds = new List<ulong>{0} }} );
+                TestClientRpc(index,clientID,new ClientRpcParams{ Send = {TargetClientIds = new List<ulong>{0} }} );
                 break;
             default:
                 break;
@@ -81,8 +81,8 @@ public class BoardController : NetworkBehaviour
     }
     
     [ClientRpc]
-    void TestClientRpc(int index,ClientRpcParams clientRpcSendParams)
+    void TestClientRpc(int index,int clientId,ClientRpcParams clientRpcSendParams)
      {
-         SendInformationToTile(index);
+         SendInformationToTile(index,clientId);
      }
 }

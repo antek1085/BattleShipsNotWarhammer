@@ -42,9 +42,12 @@ public class Tile : NetworkBehaviour
       isRaycasted = false;
    }
 
-   public void OnMissleShoot()
+   public void OnMissleShoot(int clientID)
    {
-      SpawnServerRpc();
+      if ((int)OwnerClientId != clientID)
+      {
+         SpawnServerRpc();
+      }
    }
    [ServerRpc(RequireOwnership = false)]
    private void SpawnServerRpc()

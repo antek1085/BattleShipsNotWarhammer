@@ -7,9 +7,12 @@ using UnityEngine;
 public class UnitsDataBase : NetworkBehaviour
 {
     List<GameObject> unitsGameObjects = new List<GameObject>();
+
+    bool isEnded;
     // Start is called before the first frame update
     void Start()
     {
+        isEnded = false;
         for (int i = 0; i < transform.childCount; i++)
         {
             unitsGameObjects.Add(transform.GetChild(i).gameObject);
@@ -17,8 +20,10 @@ public class UnitsDataBase : NetworkBehaviour
     }
     void Update()
     {
-        if (unitsGameObjects.Count == 0)
+        if (unitsGameObjects.Count == 0 && isEnded == false)
         {
+            Debug.Log("End");
+            isEnded = true;
            EndGameServerRpc((int)OwnerClientId);
         }
     }

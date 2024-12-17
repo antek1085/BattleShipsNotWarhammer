@@ -40,7 +40,6 @@ public class TargetableTile : NetworkBehaviour
     public void CheckShoot(bool didShootHit)
     {
         isActive = false;
-        Debug.Log(transform.name+": " + OwnerClientId);
         switch (didShootHit)
         {
             case true:

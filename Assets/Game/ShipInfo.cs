@@ -41,14 +41,15 @@ public class ShipInfo : NetworkBehaviour
         if (this.shipID == shipID && canBeDamadge)
         {
             shipHP -= 1;
-        }
-        if (shipHP == 0)
-        {
-            if (destroyed == false)
+            if (shipHP == 0)
             {
-                destroyed = true;
-                GetComponentInParent<UnitsDataBase>().ShipDestroy(this.gameObject);
+                if (destroyed == false)
+                {
+                    destroyed = true;
+                    GetComponentInParent<UnitsDataBase>().ShipDestroy(this.gameObject);
+                }
             }
         }
+        
     }
 }
