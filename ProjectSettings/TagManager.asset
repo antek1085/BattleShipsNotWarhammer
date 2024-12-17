@@ -17,9 +17,9 @@ TagManager:
   - Ship
   - Missle
   - Hittable Tile
-  - 
-  - 
-  - 
+  - Ship4HP
+  - Ship2HP
+  - Ship1HP
   - 
   - 
   - 

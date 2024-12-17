@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ShipInfo : NetworkBehaviour
@@ -10,6 +11,7 @@ public class ShipInfo : NetworkBehaviour
     public int shipHP;
     public int ownerID;
     bool canBeDamadge;
+    bool destroyed;
 
     public override void OnNetworkSpawn()
     {
@@ -42,7 +44,11 @@ public class ShipInfo : NetworkBehaviour
         }
         if (shipHP == 0)
         {
-            GetComponentInParent<UnitsDataBase>().ShipDestroy(this.gameObject);
+            if (destroyed == false)
+            {
+                destroyed = true;
+                GetComponentInParent<UnitsDataBase>().ShipDestroy(this.gameObject);
+            }
         }
     }
 }

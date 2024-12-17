@@ -12,9 +12,10 @@ public class Tile : NetworkBehaviour
    [SerializeField] GameObject missle;
    public bool isRaycasted; 
    int index;
-   [SerializeField] private LayerMask layerMask;
+   [SerializeField] private LayerMask layerMask2hp,layerMask4hp;
    GameObject spawnedObjectTransform;
    bool didHit;
+   [SerializeField] Material materialHit, materialMiss;
    
    
 
@@ -54,15 +55,22 @@ public class Tile : NetworkBehaviour
 
    public void TileHit()
    {
+      
       RaycastHit hit;
-      if (Physics.Raycast(this.transform.position, transform.transform.up, out hit, Mathf.Infinity, layerMask))
+      if (Physics.Raycast(this.transform.position, transform.transform.up, out hit, Mathf.Infinity, layerMask2hp))
       {
-         //hit.transform.GetComponent<PlaceingScript>().HP -= 1;
          didHit = true;
+         gameObject.GetComponent<MeshRenderer>().material = materialHit;
+      }
+      else if (Physics.Raycast(this.transform.position, transform.transform.up, out hit, Mathf.Infinity, layerMask4hp))
+      {
+         didHit = true;
+         gameObject.GetComponent<MeshRenderer>().material = materialHit;
       }
       else
       {
          didHit = false;
+         gameObject.GetComponent<MeshRenderer>().material = materialMiss;
       }
       int ownerId; 
       switch ((int)OwnerClientId)

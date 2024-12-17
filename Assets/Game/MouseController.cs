@@ -7,7 +7,7 @@ using UnityEngine;
 public class MouseController : NetworkBehaviour
 {
     Vector3 mousePosition;
-    [SerializeField] LayerMask layerMask;
+    [SerializeField] LayerMask layerMask2hp,layerMask4hp,layerMask1hp;
     [SerializeField] Camera _camera;
     int click;
 
@@ -15,6 +15,7 @@ public class MouseController : NetworkBehaviour
     Vector3 shipPosition;
     Plane plane;
     Ray ray;
+    int howMuchHp;
 
 
 
@@ -45,22 +46,67 @@ public class MouseController : NetworkBehaviour
 
             switch (click)
             {
-                case 0: 
-                    if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask))
+                case 0:
+                    if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask4hp))
                     {
+                        howMuchHp = 4;
                         ship = hit.transform.gameObject; 
                         
-                        ship.GetComponent<PlaceingScript>().isHeld = true;
+                        ship.GetComponent<PlaceingScript_4hp>().isHeld = true; 
                         click = 1;
+                        break;
+                    }
+                    if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask2hp))
+                    {
+                        howMuchHp = 2;
+                        ship = hit.transform.gameObject; 
+                        
+                        ship.GetComponent<PlaceingScript_2hp>().isHeld = true; 
+                        click = 1;
+                        break;
+                    }
+                    if(Physics.Raycast( ray, out hit, Mathf.Infinity, layerMask1hp))
+                    {
+                        howMuchHp = 1;
+                        ship = hit.transform.gameObject; 
+                        
+                        ship.GetComponent<PlaceingScript_1hp>().isHeld = true; 
+                        click = 1;
+                        break;
                     }
                     break;
                 case 1:
-                    if (ship != null && click == 1) 
+                    switch (howMuchHp)
                     {
+                        case 1:
+                            if (ship != null && click == 1) 
+                            {
                         
-                        ship.GetComponent<PlaceingScript>().isHeld = false;
-                        ship = null;
-                        click = 0;
+                                ship.GetComponent<PlaceingScript_1hp>().isHeld = false;
+                                ship = null;
+                                click = 0;
+                            }
+                            break;
+                        case 2:
+                            if (ship != null && click == 1) 
+                            {
+                        
+                                ship.GetComponent<PlaceingScript_2hp>().isHeld = false;
+                                ship = null;
+                                click = 0;
+                            }
+                            break;
+                        case 4:
+                            if (ship != null && click == 1) 
+                            {
+                        
+                                ship.GetComponent<PlaceingScript_4hp>().isHeld = false;
+                                ship = null;
+                                click = 0;
+                            }
+                            break;
+                        default:
+                            break;
                     }
                     break;
             }
