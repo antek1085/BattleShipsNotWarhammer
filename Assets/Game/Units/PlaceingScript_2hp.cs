@@ -11,6 +11,7 @@ public class PlaceingScript_2hp : NetworkBehaviour
    bool isRayCastLeft,isRayCastRight;
    GameObject LeftUpTile, RightDownTile;
    public bool isHeld;
+   bool isPlaced;
    [SerializeField] Vector3 startingPosition;
 
    void Awake()
@@ -18,11 +19,16 @@ public class PlaceingScript_2hp : NetworkBehaviour
       isRayCastRight = false;
       isRayCastLeft = false;
       isHeld = false;
-      
+      isPlaced = false;
       GameEndEvent.current.onGameStart += OnGameStart;
    }
    void OnGameStart()
    {
+      if (isPlaced == false)
+      {
+         GameEndEvent.current.onGameStart -= OnGameStart;
+         Destroy(gameObject);
+      }
       this.enabled = false;
    }
    void Start()
@@ -55,11 +61,12 @@ public class PlaceingScript_2hp : NetworkBehaviour
          if (isRayCastLeft && isRayCastRight && LeftUpTile != null && RightDownTile != null)
          {
             transform.position = new Vector3((LeftUpTile.transform.position.x + RightDownTile.transform.position.x) * (float)0.5, 2f, (LeftUpTile.transform.position.z + RightDownTile.transform.position.z) * (float)0.5 );
-            
+            isPlaced = true;
          }
          else
          {
             transform.position = startingPosition;
+            isPlaced = false;
          }
       }
    }
