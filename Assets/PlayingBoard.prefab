@@ -1,5 +1,138 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &348487306607870127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6013736370550559446}
+  - component: {fileID: 6916341791218464350}
+  - component: {fileID: 137302231509843118}
+  - component: {fileID: 8194546775016376719}
+  m_Layer: 5
+  m_Name: Quit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6013736370550559446
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348487306607870127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8371948253574311279}
+  m_Father: {fileID: 1630267455681207990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -427}
+  m_SizeDelta: {x: 160, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6916341791218464350
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348487306607870127}
+  m_CullTransparentMesh: 1
+--- !u!114 &137302231509843118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348487306607870127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8194546775016376719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348487306607870127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 137302231509843118}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2926858944233132644}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &446435143982456924
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +312,42 @@ MonoBehaviour:
   shipID: 5
   shipHP: 8
   ownerID: 0
+--- !u!1 &576967520994295317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630267455681207990}
+  m_Layer: 5
+  m_Name: ESC Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1630267455681207990
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576967520994295317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6013736370550559446}
+  m_Father: {fileID: 1679624864098001774}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1288027959865519700
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +1143,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63454c0bd577054ca6a368be73c2db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3146268292971652544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8371948253574311279}
+  - component: {fileID: 7034962148285007196}
+  - component: {fileID: 2120771364725189702}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8371948253574311279
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3146268292971652544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6013736370550559446}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7034962148285007196
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3146268292971652544}
+  m_CullTransparentMesh: 1
+--- !u!114 &2120771364725189702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3146268292971652544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Quit
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3348745596640545420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,12 +1867,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6070854861231685369}
   - {fileID: 2627030825018656182}
   - {fileID: 5279813237274914772}
   - {fileID: 4739576355088948179}
   - {fileID: 6134528567871376400}
   - {fileID: 440522912417471605}
-  - {fileID: 6070854861231685369}
+  - {fileID: 1630267455681207990}
   m_Father: {fileID: 4706564711447818621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1655,6 +1961,7 @@ MonoBehaviour:
   YouLose: {fileID: 2616982818102854797}
   YouWin: {fileID: 2512349151083419591}
   readyText: {fileID: 1746412201753650988}
+  escMenu: {fileID: 576967520994295317}
 --- !u!1 &4082366408370201407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +3095,7 @@ GameObject:
   - component: {fileID: 5838035492572658791}
   - component: {fileID: 2949017792621303087}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3255,7 +3562,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3945146787427217759 stripped
@@ -3340,6 +3648,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -3347,6 +3659,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -3442,6 +3758,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -3449,6 +3769,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -3571,7 +3895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3776507560280664818 stripped
@@ -3683,7 +4008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3830642982669321816 stripped
@@ -3768,6 +4094,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -3775,6 +4105,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -3870,6 +4204,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -3877,6 +4215,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -3999,7 +4341,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3607656856682733434 stripped
@@ -4111,7 +4454,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3633110562053237604 stripped
@@ -4223,7 +4567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3643571488896861863 stripped
@@ -4308,6 +4653,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -4315,6 +4664,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -4410,6 +4763,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -4417,6 +4774,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -4512,6 +4873,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -4519,6 +4884,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -4614,6 +4983,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -4621,6 +4994,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -4743,7 +5120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &3478567980848623995 stripped
@@ -4855,7 +5233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4478300927542448511 stripped
@@ -4967,7 +5346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4511115636120737951 stripped
@@ -5079,7 +5459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4541816585417537864 stripped
@@ -5191,7 +5572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4544639481087981311 stripped
@@ -5276,6 +5658,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -5283,6 +5669,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -5405,7 +5795,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4356676002200146510 stripped
@@ -5517,7 +5908,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4442719873477369714 stripped
@@ -5602,6 +5994,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -5609,6 +6005,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -5704,6 +6104,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -5711,6 +6115,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -5833,7 +6241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &4217321995716696125 stripped
@@ -5918,6 +6327,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -5925,6 +6338,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -6020,6 +6437,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -6027,6 +6448,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -6122,6 +6547,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -6129,6 +6558,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -6256,7 +6689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1234250757815209809
@@ -6368,7 +6802,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1272566871316588789
@@ -6480,7 +6915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1428362887919599880
@@ -6564,6 +7000,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -6571,6 +7011,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -6666,6 +7110,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -6673,6 +7121,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -6800,7 +7252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1538167474146429839
@@ -6880,6 +7333,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -6887,6 +7344,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -7014,7 +7475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1597152028840253786
@@ -7094,6 +7556,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -7101,6 +7567,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -7196,6 +7666,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -7203,6 +7677,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -7302,6 +7780,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -7309,6 +7791,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -7404,6 +7890,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -7411,6 +7901,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -7506,6 +8000,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -7513,6 +8011,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -7640,7 +8142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1951097678240248116
@@ -7752,7 +8255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &1973215261815691882
@@ -7864,7 +8368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &2011065404965661653
@@ -7976,7 +8481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &2076567372649552448
@@ -8088,7 +8594,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &2086790859447365226
@@ -8168,6 +8675,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -8175,6 +8686,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -8270,6 +8785,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -8277,6 +8796,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -8404,7 +8927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &2159407179758507231
@@ -8516,7 +9040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &2224541279872921350
@@ -8628,7 +9153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &2310416625325267219
@@ -8735,7 +9261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1601487863071849917 stripped
@@ -8820,6 +9347,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -8827,6 +9358,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -8922,6 +9457,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -8929,6 +9468,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -9024,6 +9567,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -9031,6 +9578,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -9153,7 +9704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1478458039199898594 stripped
@@ -9265,7 +9817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1525784473965479325 stripped
@@ -9350,6 +9903,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -9357,6 +9914,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -9479,7 +10040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1550030439624022558 stripped
@@ -9564,6 +10126,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -9571,6 +10137,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -9666,6 +10236,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -9673,6 +10247,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -9768,6 +10346,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -9775,6 +10357,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -9897,7 +10483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1408401041384019677 stripped
@@ -10009,7 +10596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1427633258380933262 stripped
@@ -10121,7 +10709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1158702065592667273 stripped
@@ -10206,6 +10795,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -10213,6 +10806,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -10308,6 +10905,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -10315,6 +10916,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -10410,6 +11015,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -10417,6 +11026,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -10512,6 +11125,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -10519,6 +11136,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -10641,7 +11262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &2008723402758424836 stripped
@@ -10753,7 +11375,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1797300931967130568 stripped
@@ -10865,7 +11488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &1855770367331640292 stripped
@@ -10950,6 +11574,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -10957,6 +11585,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -11084,7 +11716,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3546361427854862132
@@ -11164,6 +11797,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -11171,6 +11808,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -11298,7 +11939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3575842801406462463
@@ -11382,6 +12024,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -11389,6 +12035,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -11488,6 +12138,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -11495,6 +12149,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -11622,7 +12280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3699888642389896902
@@ -11734,7 +12393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3701702752580437807
@@ -11846,7 +12506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3726829914165169101
@@ -11958,7 +12619,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3795946983453794370
@@ -12070,7 +12732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3847092150866396475
@@ -12150,6 +12813,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -12157,6 +12824,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -12252,6 +12923,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -12259,6 +12934,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -12386,7 +13065,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3935361030658536224
@@ -12498,7 +13178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3936584411456822664
@@ -12578,6 +13259,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -12585,6 +13270,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -12712,7 +13401,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &3985803398887379734
@@ -12824,7 +13514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4027662258474940886
@@ -12936,7 +13627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4054079853633225281
@@ -13048,7 +13740,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4065810189397184857
@@ -13160,7 +13853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4073555515443786068
@@ -13240,6 +13934,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -13247,6 +13945,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -13374,7 +14076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4230564129308540371
@@ -13454,6 +14157,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -13461,6 +14168,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -13588,7 +14299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4461360670155841131
@@ -13668,6 +14380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -13675,6 +14391,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -13770,6 +14490,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -13777,6 +14501,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -13904,7 +14632,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &4601321140140897538
@@ -13984,6 +14713,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -13991,6 +14724,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -14113,7 +14850,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8521591101373109394 stripped
@@ -14225,7 +14963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8646833419472500515 stripped
@@ -14337,7 +15076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8369433869926085229 stripped
@@ -14449,7 +15189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8429620674635381615 stripped
@@ -14561,7 +15302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8433618529527374483 stripped
@@ -14673,7 +15415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8469121118555809044 stripped
@@ -14785,7 +15528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8474830344919321243 stripped
@@ -14870,6 +15614,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -14877,6 +15625,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -14972,6 +15724,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -14979,6 +15735,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -15101,7 +15861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8955663567418260625 stripped
@@ -15213,7 +15974,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &9012039975344975030 stripped
@@ -15298,6 +16060,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -15305,6 +16071,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -15427,7 +16197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8801637904563620103 stripped
@@ -15539,7 +16310,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &8794744204724859434 stripped
@@ -15624,6 +16396,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -15631,6 +16407,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -15726,6 +16506,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -15733,6 +16517,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -15828,6 +16616,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -15835,6 +16627,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -15930,6 +16726,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -15937,6 +16737,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -16032,6 +16836,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -16039,6 +16847,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -16134,6 +16946,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -16141,6 +16957,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -16236,6 +17056,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -16243,6 +17067,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -16338,6 +17166,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -16345,6 +17177,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -16472,7 +17308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &5927720065191812745
@@ -16584,7 +17421,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &5946542746894767917
@@ -16664,6 +17502,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -16671,6 +17513,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -16798,7 +17644,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6044392502889219857
@@ -16910,7 +17757,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6054973719709851348
@@ -16990,6 +17838,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -16997,6 +17849,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -17124,7 +17980,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6081428735734106933
@@ -17236,7 +18093,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6110231360146109118
@@ -17348,7 +18206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6156756987245642344
@@ -17460,7 +18319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6256393368773953939
@@ -17540,6 +18400,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -17547,6 +18411,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -17642,6 +18510,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -17649,6 +18521,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -17776,7 +18652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6311742039947096505
@@ -17856,6 +18733,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -17863,6 +18744,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -17990,7 +18875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6387781588688712817
@@ -18070,6 +18956,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -18077,6 +18967,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -18204,7 +19098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6463017596238374842
@@ -18284,6 +19179,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -18291,6 +19190,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -18386,6 +19289,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -18393,6 +19300,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -18488,6 +19399,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -18495,6 +19410,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -18622,7 +19541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6695241273135128066
@@ -18702,6 +19622,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -18709,6 +19633,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -18836,7 +19764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &6863604335671714076
@@ -18916,6 +19845,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -18923,6 +19856,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19018,6 +19955,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19025,6 +19966,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19120,6 +20065,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19127,6 +20076,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19249,7 +20202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6093122064039602496 stripped
@@ -19334,6 +20288,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19341,6 +20299,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19436,6 +20398,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19443,6 +20409,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19538,6 +20508,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19545,6 +20519,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19640,6 +20618,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19647,6 +20629,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19742,6 +20728,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19749,6 +20739,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19844,6 +20838,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -19851,6 +20849,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -19973,7 +20975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6043638095509718277 stripped
@@ -20085,7 +21088,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &5825687144999999120 stripped
@@ -20170,6 +21174,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -20177,6 +21185,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -20299,7 +21311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6779474187856580973 stripped
@@ -20411,7 +21424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6842308342011370885 stripped
@@ -20523,7 +21537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6860596867263602610 stripped
@@ -20608,6 +21623,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -20615,6 +21634,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -20710,6 +21733,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -20717,6 +21744,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -20839,7 +21870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6902950994475651715 stripped
@@ -20951,7 +21983,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6761088528162588353 stripped
@@ -21063,7 +22096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6499917703247969831 stripped
@@ -21148,6 +22182,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -21155,6 +22193,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -21277,7 +22319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6589432263246916983 stripped
@@ -21389,7 +22432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6575845933191456711 stripped
@@ -21474,6 +22518,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -21481,6 +22529,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -21603,7 +22655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!4 &6424401879015182836 stripped
@@ -21720,7 +22773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8121138283871955069
@@ -21832,7 +22886,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8125462649894812631
@@ -21944,7 +22999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8161459176736362268
@@ -22056,7 +23112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8211390148602355673
@@ -22136,6 +23193,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22143,6 +23204,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -22270,7 +23335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8285054686631647555
@@ -22382,7 +23448,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8289992286726977187
@@ -22462,6 +23529,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22469,6 +23540,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -22564,6 +23639,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22571,6 +23650,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -22666,6 +23749,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22673,6 +23760,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -22768,6 +23859,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22775,6 +23870,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -22870,6 +23969,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22877,6 +23980,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -22972,6 +24079,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -22979,6 +24090,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -23106,7 +24221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8500650914857448017
@@ -23218,7 +24334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8549027416148520140
@@ -23298,6 +24415,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -23305,6 +24426,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -23400,6 +24525,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -23407,6 +24536,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -23502,6 +24635,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -23509,6 +24646,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -23604,6 +24745,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -23611,6 +24756,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -23706,6 +24855,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -23713,6 +24866,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -23840,7 +24997,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8742333900153382045
@@ -23920,6 +25078,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -23927,6 +25089,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -24022,6 +25188,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -24029,6 +25199,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -24124,6 +25298,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -24131,6 +25309,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -24258,7 +25440,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   isRaycasted: 0
-  newMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  highLightedMaterial: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
+  baseMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   hitTarget: {fileID: 2100000, guid: 57b99b88883e8ba41acdb8fb9b771f49, type: 2}
   missTarget: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
 --- !u!1001 &8915709207908986415
@@ -24338,6 +25521,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -24345,6 +25532,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -24440,6 +25631,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -24447,6 +25642,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048
@@ -24542,6 +25741,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: baseMaterial
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: materialMiss
       value: 
       objectReference: {fileID: 2100000, guid: 77f4dfe58854370488b775e71d344cb3, type: 2}
@@ -24549,6 +25752,10 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
+      propertyPath: highlightedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e660b22a53aee43adbdf8a5f372a79, type: 2}
     - target: {fileID: 4750401051240026159, guid: 46a32f7bcb06f1346a27251d3a2de6a7, type: 3}
       propertyPath: layerMask2hp.m_Bits
       value: 2048

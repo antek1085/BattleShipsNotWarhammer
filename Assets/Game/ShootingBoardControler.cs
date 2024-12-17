@@ -17,6 +17,7 @@ public class ShootingBoardControler : NetworkBehaviour
        
        ShootMissleEvent.current.onMissleHit += CurrentOnonMissleHit;
    }
+   
    void CurrentOnonMissleHit(bool hitInfo, int index, int senderID)
    {
        switch (senderID)

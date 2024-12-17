@@ -8,7 +8,7 @@ public class UIManager : NetworkBehaviour
 {
     [SerializeField] GameObject yourTurn, enemyTurn;
     [SerializeField] GameObject YouLose, YouWin;
-    [SerializeField] GameObject readyText;
+    [SerializeField] GameObject readyText,escMenu;
 
     public override void OnNetworkSpawn()
    {
@@ -56,6 +56,10 @@ public class UIManager : NetworkBehaviour
        {
            Ready();
            readyText.SetActive(false);
+       }
+       if (Input.GetKeyUp(KeyCode.Escape))
+       {
+           escMenu.SetActive(!escMenu.activeSelf);
        }
    }
 
