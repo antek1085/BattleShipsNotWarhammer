@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class MissleShotted : NetworkBehaviour
 {
+    AudioSource audioSource;
+   
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Placable Tile")

@@ -13,12 +13,14 @@ public class PlaceingScript_2hp : NetworkBehaviour
    public bool isHeld;
    bool isPlaced;
    [SerializeField] Vector3 startingPosition;
+   AudioSource audioSource;
 
    void Awake()
    {
       isRayCastRight = false;
       isRayCastLeft = false;
       isHeld = false;
+      audioSource = GetComponent<AudioSource>();
       GameEndEvent.current.onGameStart += OnGameStart;
    }
    void OnGameStart()
@@ -95,5 +97,10 @@ public class PlaceingScript_2hp : NetworkBehaviour
          RightDownTile = null;
          isRayCastRight = false;
       }
+   }
+
+   public void PlayAudio()
+   {
+      audioSource.Play();
    }
 }

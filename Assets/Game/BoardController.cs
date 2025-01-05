@@ -8,6 +8,8 @@ public class BoardController : NetworkBehaviour
 {
     private List<GameObject> childList = new List<GameObject>();
     [SerializeField] ShootingBoardControler _shootingBoardControler;
+    AudioSource audioSource;
+    [SerializeField]List<AudioClip> audioSources = new List<AudioClip>();
 
     void Awake()                        
     {
@@ -15,7 +17,7 @@ public class BoardController : NetworkBehaviour
         {
             childList.Add(transform.GetChild(i).gameObject);
         }
-        
+        audioSource = GetComponent<AudioSource>();
         ShootMissleEvent.current.onMissleShoot += OnMissleShoot; 
     }
     
@@ -42,6 +44,15 @@ public class BoardController : NetworkBehaviour
     void HitInforClientRPC(bool hitInfo,int index,int senderId)
     {
         TestOneMore(hitInfo,index,senderId);
+        switch (hitInfo)
+        {
+            case true: 
+                audioSource.PlayOneShot(audioSources[0]);
+                break;
+            case false:
+                audioSource.PlayOneShot(audioSources[1]);
+                break;
+        }
     }
 
     void TestOneMore(bool hitInfo,int index,int senderId)

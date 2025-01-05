@@ -92,6 +92,7 @@ public class MouseController : NetworkBehaviour
                             {
                         
                                 ship.GetComponent<PlaceingScript_2hp>().isHeld = false;
+                                ship.GetComponent<PlaceingScript_2hp>().PlayAudio();
                                 ship = null;
                                 click = 0;
                             }
@@ -101,6 +102,7 @@ public class MouseController : NetworkBehaviour
                             {
                         
                                 ship.GetComponent<PlaceingScript_4hp>().isHeld = false;
+                                ship.GetComponent<PlaceingScript_4hp>().PlayAudio();
                                 ship = null;
                                 click = 0;
                             }

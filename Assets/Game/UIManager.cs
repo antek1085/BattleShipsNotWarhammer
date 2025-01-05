@@ -9,11 +9,14 @@ public class UIManager : NetworkBehaviour
     [SerializeField] GameObject yourTurn, enemyTurn;
     [SerializeField] GameObject YouLose, YouWin;
     [SerializeField] GameObject readyText,escMenu;
+    AudioSource audioSource;
+    [SerializeField] List<AudioClip> readyClip = new List<AudioClip>();
 
     public override void OnNetworkSpawn()
    {
        ShootMissleEvent.current.OnRoundEnd += RoundEnd;
        GameEndEvent.current.onGameEnd += OnGameEnd;
+       audioSource = GetComponent<AudioSource>();
    }
 
 
@@ -26,10 +29,12 @@ public class UIManager : NetworkBehaviour
    {
        if (senderID == (int)OwnerClientId)
        {
+           audioSource.PlayOneShot(readyClip[1]);
            YouLose.SetActive(true);
        }
        else
        {
+           audioSource.PlayOneShot(readyClip[0]);
            YouWin.SetActive(true);
        }
    }

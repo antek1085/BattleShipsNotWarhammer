@@ -1,4 +1,4 @@
-using System;
+            using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
@@ -12,6 +12,7 @@ public class PlaceingScript_4hp : NetworkBehaviour
    public bool isHeld;
    public bool isPlaced;
    [SerializeField] Vector3 startingPosition;
+   AudioSource audioSource;
 
    void Awake()
    {
@@ -20,6 +21,7 @@ public class PlaceingScript_4hp : NetworkBehaviour
       isRayCastMiddle = false;
       isRayCastRightUp = false;
       isHeld = false;
+      audioSource = GetComponent<AudioSource>();
 
       GameEndEvent.current.onGameStart += OnGameStart;
    }
@@ -133,5 +135,10 @@ public class PlaceingScript_4hp : NetworkBehaviour
          RightDownTile = null;
          isRayCastRight = false;
       }
+   }
+   
+   public void PlayAudio()
+   {
+      audioSource.Play();
    }
 }

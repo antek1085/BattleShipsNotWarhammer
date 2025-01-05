@@ -54,7 +54,7 @@ public class Tile : NetworkBehaviour
    [ServerRpc(RequireOwnership = false)]
    private void SpawnServerRpc()
    {
-      spawnedObjectTransform = Instantiate(missle, new Vector3(this.transform.position.x, transform.position.y + 10f, transform.position.z), Quaternion.Euler(0, 0, 0));
+      spawnedObjectTransform = Instantiate(missle, new Vector3(this.transform.position.x, transform.position.y + 20f, transform.position.z), Quaternion.Euler(0, 0, 0));
       spawnedObjectTransform.GetComponent<NetworkObject>().Spawn(true);
    }
 
