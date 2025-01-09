@@ -3,13 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class BoardController : NetworkBehaviour
 {
     private List<GameObject> childList = new List<GameObject>();
     [SerializeField] ShootingBoardControler _shootingBoardControler;
+    [SerializeField]List<AudioClip> hitSounds = new List<AudioClip>();
     AudioSource audioSource;
-    [SerializeField]List<AudioClip> audioSources = new List<AudioClip>();
+    [FormerlySerializedAs("audioSources")]
+    [SerializeField]List<AudioClip> missSound = new List<AudioClip>();
 
     void Awake()                        
     {
@@ -47,10 +51,12 @@ public class BoardController : NetworkBehaviour
         switch (hitInfo)
         {
             case true: 
-                audioSource.PlayOneShot(audioSources[0]);
+                int randomIndexHit = Random.Range(0,hitSounds.Count -1);
+                audioSource.PlayOneShot(hitSounds[randomIndexHit]);
                 break;
             case false:
-                audioSource.PlayOneShot(audioSources[1]);
+                int randomIndexMiss = Random.Range(0,missSound.Count -1);
+                audioSource.PlayOneShot(missSound[randomIndexMiss]);
                 break;
         }
     }

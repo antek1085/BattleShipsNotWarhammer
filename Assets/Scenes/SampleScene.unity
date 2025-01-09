@@ -162,6 +162,42 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a50020e4e5c99c34e9a8962e178f0ead, type: 2}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: hitSounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: missSound.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: hitSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ba527cc4c219ec4cba78078e38a5c8e, type: 3}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: hitSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6be4cc82258ce8348baa68a44f6b9a7d, type: 3}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: hitSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 12140a10800072d4c8bbc9d2fa923968, type: 3}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: hitSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 513b9534357a9ef409b922bbbcc6597f, type: 3}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: hitSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a2a8cf59a5a1b047b5ff54a64be96d2, type: 3}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: missSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 399642d936a32084fb3c2eb7d91076e5, type: 3}
+    - target: {fileID: 2413281576487573386, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
+      propertyPath: missSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2428259455831488950, guid: c4a659179e0db6d42a9f1e0b06e8ef24, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
