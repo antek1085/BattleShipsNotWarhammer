@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3094602570f0a84b8e444f501a5881d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipID: 5
-  shipHP: 8
+  shipID: 3
+  shipHP: 16
   ownerID: 0
 --- !u!82 &1379864158138068508
 AudioSource:
@@ -1275,6 +1275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63454c0bd577054ca6a368be73c2db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitsGameObjects: []
 --- !u!1 &3348745596640545420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,8 +1553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3094602570f0a84b8e444f501a5881d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipID: 2
-  shipHP: 4
+  shipID: 0
+  shipHP: 8
   ownerID: 0
 --- !u!82 &6084258432320107261
 AudioSource:
@@ -1943,6 +1944,7 @@ GameObject:
   - component: {fileID: 6448516914016579645}
   - component: {fileID: 2926858944233132644}
   - component: {fileID: 3605602859221580258}
+  - component: {fileID: 3087953955692764777}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2060,6 +2062,102 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1beb2f64532048d4b92fc2fa87452796, type: 3}
   - {fileID: 8300000, guid: ffe0f6ee6353e454599b2880412c18f4, type: 3}
 --- !u!82 &3605602859221580258
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3780043103615326316}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &3087953955692764777
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2637,8 +2735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3094602570f0a84b8e444f501a5881d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipID: 4
-  shipHP: 8
+  shipID: 2
+  shipHP: 16
   ownerID: 0
 --- !u!82 &928711462640659124
 AudioSource:
@@ -3479,8 +3577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3094602570f0a84b8e444f501a5881d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipID: 3
-  shipHP: 4
+  shipID: 1
+  shipHP: 8
   ownerID: 0
 --- !u!82 &4366773390762741954
 AudioSource:
@@ -4358,9 +4456,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b26765dfc2bc7894b898e00f059520c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb025b12be48ccd479a8a4ca04b28fd0, type: 2}
     - target: {fileID: 919132149155446097, guid: b26765dfc2bc7894b898e00f059520c9, type: 3}
       propertyPath: m_Name
-      value: dv_2 (1)
+      value: 2HP
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b26765dfc2bc7894b898e00f059520c9, type: 3}
+      propertyPath: m_TagString
+      value: Dunno
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7555,9 +7661,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b26765dfc2bc7894b898e00f059520c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb025b12be48ccd479a8a4ca04b28fd0, type: 2}
     - target: {fileID: 919132149155446097, guid: b26765dfc2bc7894b898e00f059520c9, type: 3}
       propertyPath: m_Name
-      value: dv_2
+      value: 2HPMAIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b26765dfc2bc7894b898e00f059520c9, type: 3}
+      propertyPath: m_TagString
+      value: Dunno
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14572,11 +14686,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 2fe51fac90a37954690f1be74cde3db7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: cb025b12be48ccd479a8a4ca04b28fd0, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bd52ab324181cf4da3f30c2e6e97e9c, type: 2}
     - target: {fileID: -7511558181221131132, guid: 2fe51fac90a37954690f1be74cde3db7, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: cb025b12be48ccd479a8a4ca04b28fd0, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bd52ab324181cf4da3f30c2e6e97e9c, type: 2}
     - target: {fileID: 919132149155446097, guid: 2fe51fac90a37954690f1be74cde3db7, type: 3}
       propertyPath: m_Name
       value: comp
@@ -16860,9 +16974,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c7ae09950a089bc4499c0a243948113d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb025b12be48ccd479a8a4ca04b28fd0, type: 2}
     - target: {fileID: 919132149155446097, guid: c7ae09950a089bc4499c0a243948113d, type: 3}
       propertyPath: m_Name
       value: smv_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7ae09950a089bc4499c0a243948113d, type: 3}
+      propertyPath: m_TagString
+      value: Dunno
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17048,9 +17170,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d4942bb744eed6c42a6b9509b394b855, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cb025b12be48ccd479a8a4ca04b28fd0, type: 2}
     - target: {fileID: 919132149155446097, guid: d4942bb744eed6c42a6b9509b394b855, type: 3}
       propertyPath: m_Name
       value: tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d4942bb744eed6c42a6b9509b394b855, type: 3}
+      propertyPath: m_TagString
+      value: Dunno
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

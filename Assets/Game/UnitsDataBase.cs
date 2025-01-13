@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class UnitsDataBase : NetworkBehaviour
 {
-    List<GameObject> unitsGameObjects = new List<GameObject>();
+    [SerializeField] List<GameObject> unitsGameObjects = new List<GameObject>();
 
     bool isEnded;
     // Start is called before the first frame update

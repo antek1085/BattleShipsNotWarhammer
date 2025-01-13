@@ -24,9 +24,13 @@ public class UIManager : NetworkBehaviour
     {
         if(!IsOwner) return;
         readyText.SetActive(true);
+        
+        ShootMissleEvent.current.OnRoundEnd += RoundEnd;
+        GameEndEvent.current.onGameEnd += OnGameEnd;
     }
     void OnGameEnd(int senderID)
    {
+       if(!IsOwner) return;
        if (senderID == (int)OwnerClientId)
        {
            audioSource.PlayOneShot(readyClip[1]);
